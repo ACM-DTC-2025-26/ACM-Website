@@ -61,7 +61,7 @@ const JoinUs = () => {
         }
 
         .card-title {
-          color: #fff;
+          color: #3374cc;
           font-size: 14px;
           font-weight: 600;
           margin-bottom: 10px;
@@ -115,10 +115,7 @@ const JoinUs = () => {
             <img src={acmLogo} alt="ACM" className="card-logo" />
             <p className="card-title">ACM DELHI TECHNICAL CAMPUS</p>
 
-            <ActionButton
-              text="Become an ACM Member"
-              link="https://www.acm.org/membership"
-            />
+           
             <ActionButton
               text="Whatsapp"
               icon={<FaWhatsapp />}
@@ -129,20 +126,25 @@ const JoinUs = () => {
               icon={<FaLinkedinIn />}
               link="https://www.linkedin.com/company/acm-student-chapter-delhi-technical-campus-ggsipu/posts/?feedView=all"
             />
+           
             <ActionButton
+              text="Instagram"
+              icon={<FaInstagram />}
+              link="https://www.instagram.com/acm_dtc/"
+            />
+             <ActionButton
               text="X"
               icon={<FaXTwitter />}
               link="https://twitter.com/acm"
             />
             <ActionButton
-              text="Instagram"
-              icon={<FaInstagram />}
-              link="https://www.instagram.com/acm/"
-            />
-            <ActionButton
               text="Linktree"
               icon={<SiLinktree />}
               link="https://linktr.ee/acm"
+            />
+             <ActionButton
+              text="Become an ACM Member"
+              link="https://www.acm.org/membership"
             />
           </div>
         </div>

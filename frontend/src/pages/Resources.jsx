@@ -97,9 +97,9 @@ const Resources = () => {
 
         /* ================= CARD ================= */
         .resource-card {
-          width: 90px;
-          height: 260px;
-          border-radius: 50px;
+          width: 150px;
+          height: 340px;
+          border-radius: 70px;
           overflow: hidden;
           cursor: pointer;
           position: relative;
@@ -145,9 +145,9 @@ const Resources = () => {
 
         /* ================= HOVER EXPANSION ================= */
         .resource-card:hover {
-          width: 300px;
-          height: 300px;
-          border-radius: 28px;
+          width: 370px;
+          height: 370px;
+          border-radius: 40px;
           transform: translateY(-6px);
         }
 
@@ -176,14 +176,14 @@ const Resources = () => {
           }
 
           .resource-card {
-            width: 90%;
-            height: 220px;
-            border-radius: 20px;
+            width: 98%;
+            height: 270px;
+            border-radius: 28px;
           }
 
           .resource-card:hover {
-            width: 90%;
-            height: 240px;
+          width: 98%;
+          height: 290px;
           }
         }
       `}</style>
