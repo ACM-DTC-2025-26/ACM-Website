@@ -33,7 +33,7 @@ function Footer() {
           <h2 className="text-sm font-semibold uppercase tracking-wide bg-[#09357A33] text-[#09357A] p-2 text-center w-fit">
             Quick Links
           </h2>
-          <div className="flex flex-col space-y-2 text-sm text-gray-600 text-center">
+          <div className="flex flex-col space-y-2 text-sm text-gray-600">
             <Link to="/home" className="hover:text-blue-600">Home</Link>
             <Link to="/gallery" className="hover:text-blue-600">Gallery</Link>
             <Link to="/resources" className="hover:text-blue-600">Resources</Link>
@@ -48,22 +48,22 @@ function Footer() {
           </h2>
           <div className="flex flex-col  text-sm text-gray-600 text-center">
 
-            <div className="flex flex-row justify-center gap-2 align-middle p-2">
+            <div className="flex flex-row justify-start gap-2 align-middle p-2">
               <img src={linkedIn} />
               <a href="#" className="hover:text-blue-600">LinkedIn</a>
             </div>
 
-            <div className="flex flex-row justify-center gap-2 align-middle p-2">
+            <div className="flex flex-row justify-start gap-2 p-2">
               <img src={x} />
               <a href="#" className="hover:text-blue-600">X</a>
             </div>
 
-            <div className="flex flex-row justify-center gap-2 align-middle p-2">
+            <div className="flex flex-row justify-start gap-2 align-middle p-2">
               <img src={instagram} />
               <a href="#" className="hover:text-blue-600">Instagram</a>
             </div>
 
-            <div className="flex flex-row justify-center gap-2 align-middle p-2">
+            <div className="flex flex-row justify-start gap-2 align-middle p-2">
               <img src={mail} />
               <a href="#" className="hover:text-blue-600">Email</a>
             </div>
