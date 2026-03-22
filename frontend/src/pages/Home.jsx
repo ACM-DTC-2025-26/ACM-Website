@@ -202,138 +202,138 @@ function Home() {
             </section>
 
             <section className="bg-gray-100 py-20 px-6">
-  <div className="max-w-7xl mx-auto flex flex-col items-center gap-12">
+                <div className="max-w-7xl mx-auto flex flex-col items-center gap-12">
 
-    {/* Heading */}
-    <h2 className="text-5xl font-extrabold text-center">
-      MEET OUR <span className="text-blue-600">PRESIDENT</span>
-    </h2>
+                    {/* Heading */}
+                    <h2 className="text-5xl font-extrabold text-center">
+                        MEET OUR <span className="text-blue-600">PRESIDENT</span>
+                    </h2>
 
-    {/* Content */}
-    <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
+                    {/* Content */}
+                    <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
 
-      {/* Left Placeholder / Content Box */}
-      <div className="w-full md:w-[65%] h-62.5 md:h-75 bg-gray-300 rounded-3xl">
-        {/* You can add text/content here later */}
-      </div>
+                        {/* Left Placeholder / Content Box */}
+                        <div className="w-full md:w-[65%] h-62.5 md:h-75 bg-gray-300 rounded-3xl">
+                            {/* You can add text/content here later */}
+                        </div>
 
-      {/* President Image */}
-      <div className="w-full md:w-[30%] flex justify-center">
-        <img
-          src={president}
-          alt="President"
-          className="w-62.5 md:w-75 h-75 object-cover rounded-md shadow-lg"
-        />
-      </div>
+                        {/* President Image */}
+                        <div className="w-full md:w-[30%] flex justify-center">
+                            <img
+                                src={president}
+                                alt="President"
+                                className="w-62.5 md:w-75 h-75 object-cover rounded-md shadow-lg"
+                            />
+                        </div>
 
-    </div>
+                    </div>
 
-  </div>
-</section>
+                </div>
+            </section>
 
-<section className="bg-gray-100 py-20 px-6">
-  <div className="max-w-7xl mx-auto flex flex-col items-center gap-12">
+            <section className="bg-gray-100 py-20 px-6">
+                <div className="max-w-7xl mx-auto flex flex-col items-center gap-12">
 
-    {/* Heading */}
-    <h2 className="text-5xl font-extrabold text-center">
-      HERE ARE SOME <span className="text-blue-600">HELPFUL</span> <br />
-      RESOURCES
-    </h2>
+                    {/* Heading */}
+                    <h2 className="text-5xl font-extrabold text-center">
+                        HERE ARE SOME <span className="text-blue-600">HELPFUL</span> <br />
+                        RESOURCES
+                    </h2>
 
-    {/* Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                    {/* Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
 
-      {/* Left Tall Card */}
-      <div className="rounded-2xl overflow-hidden border border-blue-200 relative group">
-        <img
-          src={powerbi}
-          alt="Power BI"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
-        <p className="absolute bottom-4 left-4 text-white font-semibold text-lg">
-          POWER BI <br /> RESOURCES
-        </p>
-      </div>
+                        {/* Left Tall Card */}
+                        <div className="rounded-2xl overflow-hidden border border-blue-200 relative group">
+                            <img
+                                src={powerbi}
+                                alt="Power BI"
+                                className="w-full h-full object-cover"
+                            />
+                            <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
+                            <p className="absolute bottom-4 left-4 text-white font-semibold text-lg">
+                                POWER BI <br /> RESOURCES
+                            </p>
+                        </div>
 
-      {/* Right Side */}
-      <div className="md:col-span-2 flex flex-col gap-6">
+                        {/* Right Side */}
+                        <div className="md:col-span-2 flex flex-col gap-6">
 
-        {/* Top Wide Card */}
-        <div className="rounded-2xl overflow-hidden border border-blue-200 relative">
-          <img
-            src={sql}
-            alt="SQL"
-            className="w-full h-45 object-cover"
-          />
-          <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
-          <p className="absolute bottom-4 left-4 text-white font-semibold text-lg">
-            SQL CHEATSHEET
-          </p>
-        </div>
+                            {/* Top Wide Card */}
+                            <div className="rounded-2xl overflow-hidden border border-blue-200 relative">
+                                <img
+                                    src={sql}
+                                    alt="SQL"
+                                    className="w-full h-45 object-cover"
+                                />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
+                                <p className="absolute bottom-4 left-4 text-white font-semibold text-lg">
+                                    SQL CHEATSHEET
+                                </p>
+                            </div>
 
-        {/* Bottom Two Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            {/* Bottom Two Cards */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          <div className="rounded-2xl overflow-hidden border border-blue-200 relative">
-            <img
-              src={sixsigma}
-              alt="Six Sigma"
-              className="w-full h-40 object-cover"
-            />
-            <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
-            <p className="absolute bottom-4 left-4 text-white font-semibold text-lg">
-              SIX SIGMA <br /> GUIDANCE
-            </p>
-          </div>
+                                <div className="rounded-2xl overflow-hidden border border-blue-200 relative">
+                                    <img
+                                        src={sixsigma}
+                                        alt="Six Sigma"
+                                        className="w-full h-40 object-cover"
+                                    />
+                                    <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
+                                    <p className="absolute bottom-4 left-4 text-white font-semibold text-lg">
+                                        SIX SIGMA <br /> GUIDANCE
+                                    </p>
+                                </div>
 
-          <div className="rounded-2xl overflow-hidden border border-blue-200 relative">
-            <img
-              src={excel}
-              alt="Excel"
-              className="w-full h-40 object-cover"
-            />
-            <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
-            <p className="absolute bottom-4 left-4 text-white font-semibold text-lg">
-              TOP 50 EXCEL <br /> QUESTIONS
-            </p>
-          </div>
+                                <div className="rounded-2xl overflow-hidden border border-blue-200 relative">
+                                    <img
+                                        src={excel}
+                                        alt="Excel"
+                                        className="w-full h-40 object-cover"
+                                    />
+                                    <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
+                                    <p className="absolute bottom-4 left-4 text-white font-semibold text-lg">
+                                        TOP 50 EXCEL <br /> QUESTIONS
+                                    </p>
+                                </div>
 
-        </div>
-      </div>
+                            </div>
+                        </div>
 
-    </div>
-  </div>
-</section>
+                    </div>
+                </div>
+            </section>
 
-<section className="bg-white py-20 px-6">
-  <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
+            <section className="bg-white py-20 px-6">
+                <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
 
-    {/* Heading */}
-    <h2 className="text-4xl md:text-5xl font-extrabold text-center">
-      SUBSCRIBE TO OUR NEWSLETTER
-    </h2>
+                    {/* Heading */}
+                    <h2 className="text-4xl md:text-5xl font-extrabold text-center">
+                        SUBSCRIBE TO OUR NEWSLETTER
+                    </h2>
 
-    {/* Input + Button */}
-    <div className="w-full flex flex-col md:flex-row items-center gap-4 bg-gray-100 p-4 rounded-xl shadow-sm">
+                    {/* Input + Button */}
+                    <div className="w-full flex flex-col md:flex-row items-center gap-4 bg-gray-100 p-4 rounded-xl shadow-sm">
 
-      <input
-        type="email"
-        placeholder="Enter your email"
-        className="flex-1 w-full px-4 py-3 rounded-lg outline-none bg-white border border-gray-300"
-      />
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            className="flex-1 w-full px-4 py-3 rounded-lg outline-none bg-white border border-gray-300"
+                        />
 
-      <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition w-full md:w-auto">
-        Subscribe
-      </button>
+                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition w-full md:w-auto">
+                            Subscribe
+                        </button>
 
-    </div>
+                    </div>
 
-  </div>
-</section>
+                </div>
+            </section>
 
-<Footer />
-            
+            <Footer />
+
         </div>
     );
 }
