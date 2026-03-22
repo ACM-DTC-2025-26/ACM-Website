@@ -18,6 +18,7 @@ import excel from "../assets/pdfs/excel.png"
 import sixsigma from "../assets/pdfs/sixsigma.png"
 import sql from "../assets/pdfs/sql.png"
 import Footer from "../components/Footer";
+import { useEffect, useState } from "react";
 
 function Home() {
 
@@ -40,6 +41,12 @@ function Home() {
         },
     ];
 
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        setShow(true);
+    }, []);
+
     return (
         <div className="bg-linear-to-r from-gray-100 to-purple-100 min-h-screen">
             <NavBar />
@@ -47,31 +54,29 @@ function Home() {
             <section className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between">
 
                 {/* LEFT CONTENT */}
-                <div className="max-w-xl flex flex-col gap-6">
-
-                    {/* Tag */}
+                <div
+                    className={`
+      max-w-xl flex flex-col gap-6
+      transition-all duration-[2500ms] ease-out
+      ${show ? "translate-x-0 opacity-100" : "-translate-x-20 opacity-0"}
+    `}
+                >
                     <span className="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-md w-fit font-medium">
                         INSPIRING THE FUTURE OF COMPUTING AT
                     </span>
 
-                    {/* Heading */}
                     <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
                         ACM DELHI TECHNICAL CAMPUS
                     </h1>
 
-                    {/* Description */}
                     <p className="text-gray-700 text-base leading-relaxed">
                         DTC ACM Student Chapter believes in providing a{" "}
                         <span className="text-blue-600 font-medium">
                             healthy environment
                         </span>{" "}
-                        where creativity and imagination can flourish. Through collaboration
-                        and engagement in a plethora of technical activities and projects,
-                        we envision to build a community of like-minded people who love to
-                        code, collaborate and have fun!
+                        where creativity and imagination can flourish...
                     </p>
 
-                    {/* Buttons */}
                     <div className="flex gap-4 mt-2">
                         <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition">
                             Join Us
@@ -82,7 +87,6 @@ function Home() {
                         </button>
                     </div>
 
-                    {/* Socials */}
                     <div className="flex items-center gap-4 mt-6">
                         <span className="text-sm text-gray-600">Connect with us</span>
                         <div className="h-px w-20 bg-gray-400"></div>
@@ -93,19 +97,25 @@ function Home() {
                             <img src={insta} className="w-5 cursor-pointer" />
                         </div>
                     </div>
-
                 </div>
 
                 {/* RIGHT IMAGE */}
-                <div className="mt-12 md:mt-0">
+                <div
+                    className={`
+      mt-12 md:mt-0
+      transition-all duration-[2500ms] ease-out delay-200
+      ${show ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"}
+    `}
+                >
                     <img
                         src={techguy}
                         alt="Tech Guy"
-                        className="w-135 md:w-190 object-contain"
+                        className="w-[300px] md:w-[450px] object-contain"
                     />
                 </div>
 
             </section>
+
 
             <section className="bg-gray-100 py-20 px-6">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
@@ -231,7 +241,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className="bg-gray-100 py-20 px-6">
+            <section className="bg-gray-200 py-20 px-6">
                 <div className="max-w-7xl mx-auto flex flex-col items-center gap-12">
 
                     {/* Heading */}
@@ -244,7 +254,7 @@ function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
 
                         {/* Left Tall Card */}
-                        <div className="rounded-2xl overflow-hidden border border-blue-200 relative group">
+                        <div className="rounded-2xl overflow-hidden border-16 border-white relative group">
                             <img
                                 src={powerbi}
                                 alt="Power BI"
@@ -260,7 +270,7 @@ function Home() {
                         <div className="md:col-span-2 flex flex-col gap-6">
 
                             {/* Top Wide Card */}
-                            <div className="rounded-2xl overflow-hidden border border-blue-200 relative">
+                            <div className="rounded-2xl overflow-hidden border-16 border-white relative">
                                 <img
                                     src={sql}
                                     alt="SQL"
@@ -275,7 +285,7 @@ function Home() {
                             {/* Bottom Two Cards */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                                <div className="rounded-2xl overflow-hidden border border-blue-200 relative">
+                                <div className="rounded-2xl overflow-hidden border-16 border-white relative">
                                     <img
                                         src={sixsigma}
                                         alt="Six Sigma"
@@ -287,7 +297,7 @@ function Home() {
                                     </p>
                                 </div>
 
-                                <div className="rounded-2xl overflow-hidden border border-blue-200 relative">
+                                <div className="rounded-2xl overflow-hidden border-16 border-white relative">
                                     <img
                                         src={excel}
                                         alt="Excel"
