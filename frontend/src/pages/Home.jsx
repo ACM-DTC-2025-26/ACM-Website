@@ -19,6 +19,7 @@ import sixsigma from "../assets/pdfs/sixsigma.png"
 import sql from "../assets/pdfs/sql.png"
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
+import CursorGrid from "../components/CursorGrid";
 
 function Home() {
 
@@ -49,6 +50,7 @@ function Home() {
 
     return (
         <div className="bg-linear-to-r from-gray-100 to-purple-100 min-h-screen">
+            <CursorGrid />
             <NavBar />
 
             <section className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between">

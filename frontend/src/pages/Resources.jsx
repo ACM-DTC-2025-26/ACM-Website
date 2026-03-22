@@ -5,6 +5,7 @@ import powerbi from "../assets/resources/resource2.jpg";
 import ai from "../assets/resources/resource1.jpg";
 import web from "../assets/resources/resource4.jpg";
 import dsa from "../assets/resources/resource3.jpg";
+import CursorGrid from "../components/CursorGrid";
 
 const resourcesData = [
   {
@@ -37,6 +38,7 @@ const Resources = () => {
   return (
     <>
       <Navbar />
+      <CursorGrid />
 
       <section className="resources-page">
         <h1 className="heading">

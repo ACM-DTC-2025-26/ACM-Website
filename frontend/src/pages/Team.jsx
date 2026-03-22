@@ -14,6 +14,7 @@ import TeamCarousel from "../components/TeamCorousel";
 import Footer from "../components/Footer";
 import mailWhite from "../assets/Icons/mail-white.svg"
 import linkedInWhite from "../assets/Icons/Linked-white.svg"
+import CursorGrid from "../components/CursorGrid";
 
 function Team() {
   const avatars = [
@@ -29,6 +30,7 @@ function Team() {
   return (
     <div>
       <NavBar />
+      <CursorGrid />
 
       {/* FULL-WIDTH SPOTLIGHT SECTION */}
       <section className="relative w-full h-[90vh] overflow-hidden bg-black">

@@ -5,6 +5,7 @@ import { SiLinktree } from "react-icons/si";
 
 import acmLogo from "../assets/ACMLogo.png";
 import heroImg from "../assets/hero.png";
+import CursorGrid from "../components/CursorGrid";
 
 const JoinUs = () => {
   return (
@@ -104,6 +105,7 @@ const JoinUs = () => {
       `}</style>
 
       <div className="joinus-page">
+        <CursorGrid />
         <NavBar />
 
         <div className="joinus-content">

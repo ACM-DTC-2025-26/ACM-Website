@@ -8,6 +8,7 @@ import vision from "../assets/AboutUsPage/2.png"
 import plan from "../assets/AboutUsPage/3.jpg"
 import wallpaper from "../assets/AboutUsPage/wallpaper.jpg"
 import Footer from "../components/Footer";
+import CursorGrid from "../components/CursorGrid";
 
 function About() {
 
@@ -34,6 +35,7 @@ function About() {
 
     return (
         <div className="bg-white min-h-screen">
+            <CursorGrid />
             <NavBar />
 
             {/* Introduction */}

@@ -8,6 +8,7 @@ import event2 from '../assets/Events/event2.png'
 import event3 from '../assets/Events/event3.png'
 import event4 from '../assets/Events/event4.png'
 import Footer from "../components/Footer";
+import CursorGrid from "../components/CursorGrid";
 
 function Events() {
   const events = [
@@ -33,6 +34,7 @@ function Events() {
   return (
     <div className="bg-white">
       <NavBar />
+      <CursorGrid />
       <div className="mt-20 flex flex-col justify-center items-center">
         <h1 className="text-black text-5xl font-bold"><span className="text-[#005DAA]">Fueling</span> Ideas, <span className="text-[#005DAA]">Powering</span> Innovation</h1>
         <h2 className="text-center m-2">Become part of a vibrant community of developers, designers, and tech enthusiasts who believe in<br />learning by doing.</h2>

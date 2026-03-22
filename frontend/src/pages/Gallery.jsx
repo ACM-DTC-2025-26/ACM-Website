@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/NavBar";   // adjust path if needed
 import Footer from "../components/Footer";   // adjust path if needed
+import CursorGrid from "../components/CursorGrid";
 
 
 const images = [
@@ -134,6 +135,7 @@ const Gallery = () => {
 
       {/* Navbar */}
       <Navbar />
+      <CursorGrid />
 
       {/* Gallery Section */}
       <div className="gallery-wrapper">
